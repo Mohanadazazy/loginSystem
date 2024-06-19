@@ -82,7 +82,7 @@ function passwordEmailExist(){
 
 function logOut(){
     localStorage.removeItem("session")
-    location.replace(location.protocol+"/signIn.html")
+    location.replace(location.protocol+"/loginSystem")
     
 }
 let Hi = localStorage.getItem("session")
