@@ -12,6 +12,11 @@ let sayHi=document.querySelector("#username")
 var users =[];
 let allPizza=[];
 
+var pathparts = location.pathname.split('/');
+var baseURL = ''
+for (var i = 0; i < pathparts.length - 1; i++) {
+    baseURL += '/' + pathparts[i]
+}
 // console.log(location.hostname,location.pathname,location.protocol,location.port);
 if(storage != null){
     users = storage
@@ -52,9 +57,7 @@ function checkEmailPassword(){
          console.log("correct");
          alertValid.classList.add("d-none")
          localStorage.setItem("session", name)
-         location.replace( location.protocol+'/home.html')
-         sayHi.innerHTML="Hi "
-
+         location.replace( location.protocol+'/loginSystem/home.html')
     }else{
             console.log("invalid");
             alertValid.classList.remove("d-none")
