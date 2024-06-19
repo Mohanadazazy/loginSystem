@@ -1,0 +1,26 @@
+body{
+    background-color: #23343D;
+}
+.container{
+    
+    height: 100vh;
+}
+.form input{
+    background-color: transparent !important;
+}
+.form h1{
+    color: #17A2B8;
+}
+.form input::placeholder {
+    color: white;
+    opacity: 0.5;
+  }
+  .form p a {
+    text-decoration: none;
+  }
+  .form p a span{
+    color: white;
+  }
+  .form p a span:hover{
+    text-decoration: underline;
+  }
